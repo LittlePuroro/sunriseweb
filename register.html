@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+<div class="colorbar bgorange hidden-xs"></div>
+<header class="container">
+    <nav class="navbar navbar-default menubar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#smallmenu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="hidden-xs navbar-brand" href="#"><img src="photos/logo.png"/></a>
+                <a class="visible-xs navbar-brand" href="#"><b><span class="red">Sunrise</span> Vietnam</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="smallmenu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-xs"><a href="/"><img src="photos/home/homeicon.png"/></a></li>
+                    <li class="visible-xs"><a href="/">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="ourteam.html">OUR TEAM</a></li>
+                    <li><a href="worldstudyfair.html">WORLD STUDY FAIR</a></li>
+                    <li><a href="worldstudyguide.html">WORLD STUDY GUIDE</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </div><!-- .navbar-collapse -->
+        </div>
+    </nav>
+</header>
+<h2 class="text-center"><b>REGISTER</b></h2>
+<div class="smallspace"></div>
+<div class="container">
+    <form data-toggle="validator" role="form" id="dangkyform" class="form-horizontal">
+        <div class="panel panel-info">
+            <div class="panel-heading"><h3><b>Section 1 - Institution</b></h3></div>
+            <div class="panel-body">
+                <div class="form-group col-xs-12">
+                    <label><b>Name of Institution</b> (in capital letters):</label>
+
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="nameinst" type="text" class="form-control" id="tentruong"
+                               required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="nameinst" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--tentruong-->
+                <div class="form-group col-xs-12">
+                    <label>Contact person:</label>
+
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="name" type="text" class="form-control" id="hoten" required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="name" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--hoten-->
+                <div class="form-group col-xs-12">
+                    <label>Address:</label>
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="add" type="text" class="form-control" id="diacchi"
+                               required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="add" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--diachi-->
+                <div class="form-group col-xs-12">
+                    <label>Tel:</label>
+
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="tel" type="text" pattern="^[+0-9; ]{1,}$"
+                               class="form-control" id="sodt" required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="tel" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--sodt-->
+                <div class="form-group col-xs-12">
+                    <label>Fax:</label>
+
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="faxx" type="text" pattern="^[+0-9; ]{1,}$"
+                               class="form-control" id="fax" required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="faxx" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--fax-->
+                <div class="form-group col-xs-12">
+                    <label>Email:</label>
+
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="mail" type="email" class="form-control" id="email"
+                               required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="mail" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--email-->
+                <div class="form-group col-xs-12">
+                    <label>Web:</label>
+
+                    <div class="input-group col-xs-12">
+                        <input aria-describedby="web" type="text" class="form-control" id="website"
+                               required>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback"
+                                          aria-hidden="true"></span>
+                        <span id="web" class="sr-only">(success)</span>
+                    </div>
+                </div>
+                <!--web-->
+                <div class="form-group col-xs-12">
+                    <label><b>Type of Institue:</b></label>
+                    <div class="form-group">
+                    <div class="radio col-xs-12 col-sm-4">
+                        <label>
+                            <input type="radio" name="typeinst" id="typeinst1" value="University">
+                            University
+                        </label>
+                    </div>
+                    <div class="radio col-xs-12 col-sm-4">
+                        <label>
+                            <input type="radio" name="typeinst" id="typeinst2" value="College"> College
+                        </label>
+                    </div>
+                    <div class="radio col-xs-12 col-sm-4">
+                        <label>
+                            <input type="radio" name="typeinst" id="typeinst3"
+                                   value="Vocational Institution"> Vocational Institution
+                        </label>
+                    </div>
+                    <div class="radio col-xs-12 col-sm-4">
+                        <label>
+                            <input type="radio" name="typeinst" id="typeinst4" value="High School"> High
+                            School
+                        </label>
+                    </div>
+                    <div class="radio col-xs-12 col-sm-4">
+                        <label>
+                            <input type="radio" name="typeinst" id="typeinst5" value="Language Centre">
+                            Language Centre
+                        </label>
+                    </div>
+                    <div class="radio col-xs-12 col-sm-4">
+                        <label>
+                            <input type="radio" name="typeinst" id="typeinst6" value="other"> Other (please
+                            specify)
+                        </label>
+                    </div>
+                    </div>
+                    <input type="text" class="form-control col-xs-12" id="othertype" placeholder="" required>
+                </div>
+                <!--type-->
+            </div>
+        </div>
+        <!--section1-->
+        <div class="panel panel-danger">
+            <div class="panel-heading"><h3><b>Section 2 - Location(s)</b></h3></div>
+            <div class="panel-body">
+                <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="panel panel-default">
+                        <label>We wish to attend</label>
+                        <div class="checkbox">
+                            <label class="text-uppercase"><h5><input type="checkbox" id="hcmfair1" name="check"> Ho Chi Minh World Study Fair</h5></label>
+                        </div>
+                        <p><b>3:00 PM - 7:30 PM, Friday March 18<sup>th</sup> 2016</b></p>
+
+                        <p><b>Liberty Central Saigon Hotel</b></p>
+                        <p>59-61 Pasteur Street, 1 District, Ho Chi Minh</p>
+
+                        <h5 class="price-none">Fee: $ 0</h5>
+                        <h5 class="price">Fee: $ 1000</h5>
+                        <br/>
+                        <label>Interpreter required:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhcm1" id="interhcm11"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhcm1" id="interhcm12"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--hcmfair1-->
+                <div class="col-xs-12 col-sm-4">
+                    <div class="panel panel-default">
+                        <label>We wish to attend</label>
+                        <div class="checkbox">
+                            <label class="text-uppercase"><h5><input type="checkbox" id="hnfair1" name="check"> Ha Noi World Study Fair</h5></label>
+                        </div>
+                        <p><b>1:00 PM - 5:30 PM, Saturday March 19<sup>th</sup> 2016</b></p>
+
+                        <p><b>Star Galaxy Convention</b></p>
+                        <p>87 Lang Ha Street, Dong Da District, Hanoi</p>
+
+                        <h5 class="price-none">Fee: $ 0</h5>
+                        <h5 class="price">Fee: $ 1000</h5>
+                        <br/>
+                        <label>Interpreter required:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhn1" id="interhn11"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhn1" id="interhn12"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--hnfair1-->
+                <div class="col-xs-12 col-sm-4">
+                    <div class="panel panel-default">
+                        <label>We wish to attend</label>
+                        <div class="checkbox">
+                            <label class="text-uppercase"><h5><input type="checkbox" id="hpfair1" name="check"> Hai Phong World Study Fair</h5></label>
+                        </div>
+                        <p><b>8:30 AM - 12:00 PM, Sunday March 20<sup>th</sup> 2016</b></p>
+
+                        <p><b>Nam Cuong Hotel</b></p>
+                        <p>47, Lach Tray Street, Ngo Quyen District, Haiphong</p>
+                        <h5 class="price-none">Fee: $ 0</h5>
+                        <h5 class="price">Fee: $ 1000</h5>
+                        <br/>
+                        <label>Interpreter required:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhp1" id="interhp11"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhp1" id="interhp12"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--hpfair1-->
+                    </div>
+                <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="panel panel-default">
+                        <label>We wish to attend</label>
+                        <div class="checkbox">
+                            <label class="text-uppercase"><h5><input type="checkbox" id="hcmfair2" class="check"> Ho Chi Minh World Study Fair</h5></label>
+                        </div>
+                        <p><b>3:00 PM - 7:30 PM, Friday September 30<sup>th</sup> 2016</b></p>
+
+                        <p><b>Liberty Central Saigon Hotel</b></p>
+                        <p>59-61 Pasteur Street, 1 District, Ho Chi Minh</p>
+                        <h5 class="price-none">Fee: $ 0</h5>
+                        <h5 class="price">Fee: $ 1000</h5>
+                        <br/>
+                        <label>Interpreter required:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhcm2" id="interhcm21"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhcm2" id="interhcm22"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--hcmfair2-->
+                <div class="col-xs-12 col-sm-4">
+                    <div class="panel panel-default">
+                        <label>We wish to attend</label>
+                        <div class="checkbox">
+                            <label class="text-uppercase"><h5><input type="checkbox" id="hnfair2" name="check"> Ha Noi World Study Fair</h5></label>
+                        </div>
+                        <p><b>1:00 PM - 5:30 PM, Saturday October 1<sup>st</sup> 2016</b></p>
+
+                        <p><b>Star Galaxy Convention</b></p>
+                        <p>87 Lang Ha Street, Dong Da District, Hanoi</p>
+                        <h5 class="price-none">Fee: $ 0</h5>
+                        <h5 class="price">Fee: $ 1000</h5>
+                        <br/>
+                        <label>Interpreter required:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhn2" id="interhn21"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhn2" id="interhn22"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--hnfair2-->
+                <div class="col-xs-12 col-sm-4">
+                    <div class="panel panel-default">
+                        <label>We wish to attend</label>
+                        <div class="checkbox">
+                            <label class="text-uppercase"><h5><input type="checkbox" id="hpfair2" name="check"> Hai Phong World Study Fair</h5></label>
+                        </div>
+                        <p><b>8:30 AM - 12:00 PM, Sunday October 2<sup>nd</sup> 2016</b></p>
+
+                        <p><b>Nam Cuong Hotel</b></p>
+                        <p>47, Lach Tray Street, Ngo Quyen District, Haiphong</p>
+                        <h5 class="price-none">Fee: $ 0</h5>
+                        <h5 class="price">Fee: $ 1000</h5>
+                        <br/>
+                        <label>Interpreter required:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhp2" id="interhp21"> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="interhp2" id="interhp22"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--hpfair2-->
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="panel panel-default">
+                            <h5>Total Amount: </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-12 text-center">
+                <button type="submit" class="btn btnregister bgblue white" id="dkbtn"><h3>REGISTER</h3></button>
+                <button type="reset" class="btn btnregister bgorange white" onclick="return resetForm()"><h3>RESET</h3></button>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="bgdgray white">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-11">
+                <img class="img-responsive" id="background-dot" src="photos/footer/dot.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h6>hanoi <span class="dorange">(head office)</span></h6>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/adicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p class="media-heading">86 Cua Bac, Ba Dinh dist. Hanoi</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/phoneicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Tel: +84 4 37224878 / 37224898</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/printicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Fax: +84 4 37224855</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h6>haiphong <span class="dorange">(office)</span></h6>
+
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/adicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p class="media-heading">29 Nguyen Trai, Haiphong Vietnam</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/phoneicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Tel: + (84-31) 2640689 - 3653269</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/printicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Fax: + (84-31) 3732895</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h6>ho chi minh <span class="dorange">(office)</span></h6>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/adicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p class="media-heading">Level 7 Thanh Dung Tower, 179 Nguyen Cu Trinh str., Nguyen Cu Trinh
+                            Ward, District 1</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/phoneicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Tel: + (84-8) 38370176 - 38370226</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="photos/footer/printicon.png"/>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Fax: + (84-8) 38360940</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <hr/>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-lg-2">
+                <ul>
+                    <li class="blue"><a class="white" href="/">home</a></li>
+                    <li class="blue"><a class="white" href="aboutus.html">about us</a></li>
+                    <li class="blue"><a class="white" href="ourteam.html">our team</a></li>
+                    <li class="blue"><a class="white" href="worldstudyfair.html">world study fair</a></li>
+                    <li class="blue"><a class="white" href="worldstudyguide.html">world study guide</a></li>
+                    <li class="blue"><a class="white" href="contactus.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-3"><p><span class="blue">Web:</span> sunrisevietnam.com</p></div>
+            <div class="col-xs-12 col-sm-4 col-lg-3"><p><span class="blue">Email:</span> info@sunrisevietnam.com</p></div>
+            <div class="col-xs-12 col-sm-6 col-lg-4"><p><span class="blue">Facebook:</span> www.facebook.com/thaiduong.vietnam</p></div>
+            <div class="col-xs-12 col-sm-4 social">
+                <a href="https://www.facebook.com/thaiduong.vietnam" target="_blank"><img src="photos/footer/fb.png"/></a>
+                <a href="https://plus.google.com/+Sunrisevietnam-tuvanduhoc/about" target="_blank"><img src="photos/footer/g.png"/></a>
+                <a href="https://twitter.com/SunriseVietnam" target="_blank"><img src="photos/footer/tw.png"/></a>
+                <a href="https://www.youtube.com/watch?v=J_5ByqI-_KQ" target="_blank"><img src="photos/footer/yt.png"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 smallspace"></div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="js/site.js"></script>
+<script type="text/javascript">
+    function resetForm(dangkyform) {
+        $('.selectpicker').selectpicker('deselectAll');
+    }
+</script>
+</body>
+</html>
